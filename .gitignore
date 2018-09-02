@@ -3,3 +3,6 @@
 # escape log files
 info.log
 errors.log
+# escape test coverage files
+/.nyc_output
+/coverage

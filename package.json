@@ -4,7 +4,8 @@
   "description": "A micro-service that generates thumbnail of an image sent to its server, and also performs json-patch operations",
   "main": "index.js",
   "scripts": {
-    "test": "mocha",
+    "test": "nyc mocha --timeout 10000",
+    "coverage": " nyc report --reporter=html --reporter=text ",
     "start": "node src/index.js"
   },
   "repository": {
@@ -12,8 +13,8 @@
     "url": "git+https://github.com/klexzi/thumbnail-generator-microservice.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Nwosu Kelechi <kelechinwosumail@gmail.com>",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/klexzi/thumbnail-generator-microservice/issues"
   },
@@ -32,8 +33,16 @@
   },
   "devDependencies": {
     "chai": "^4.1.2",
+    "coveralls": "^3.0.2",
     "eslint": "^5.5.0",
     "mocha": "^5.2.0",
+    "nyc": "^13.0.1",
     "request": "^2.88.0"
+  },
+  "nyc": {
+    "exclude": [
+      "**/node_modules/**",
+      "**/coverage/**"
+    ]
   }
 }
