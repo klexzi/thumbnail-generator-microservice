@@ -1,0 +1,39 @@
+{
+  "name": "thumbnail-generator-microservice",
+  "version": "1.0.0",
+  "description": "A micro-service that generates thumbnail of an image sent to its server, and also performs json-patch operations",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "start": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/klexzi/thumbnail-generator-microservice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/klexzi/thumbnail-generator-microservice/issues"
+  },
+  "homepage": "https://github.com/klexzi/thumbnail-generator-microservice#readme",
+  "dependencies": {
+    "bcrypt": "^3.0.0",
+    "config": "^2.0.1",
+    "express": "^4.16.3",
+    "express-async-errors": "^3.0.0",
+    "jimp": "^0.3.11",
+    "joi": "^13.6.0",
+    "json-patch": "^0.7.0",
+    "jsonwebtoken": "^8.3.0",
+    "lodash": "^4.17.10",
+    "winston": "^3.0.0"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "eslint": "^5.5.0",
+    "mocha": "^5.2.0",
+    "request": "^2.88.0"
+  }
+}

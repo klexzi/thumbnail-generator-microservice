@@ -1,0 +1,5 @@
+{
+  "name": "Thumbnail Generator MicroService",
+  "jwtSecret": "",
+  "test_url": "http://localhost:5000"
+}

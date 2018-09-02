@@ -1,0 +1,5 @@
+# escape node_modules
+/node_modules
+# escape log files
+info.log
+errors.log

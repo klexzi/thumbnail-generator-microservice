@@ -1,0 +1,4 @@
+{
+  "name": "Thumbnail Generator MicroService",
+  "jwtSecret": "tgm_secret"
+}
