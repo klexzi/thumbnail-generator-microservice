@@ -7,5 +7,9 @@ module.exports = app => {
   app.use("/api/auth", auth);
   app.use("/api/thumbnail", generateThumbnail);
   app.use("/api/patch", jsonPatch);
+  // Catch 404 and forward to error handler
+  app.use((req, res) => {
+    res.status(404).send("Endpoint not found");
+  });
   app.use(error);
 };
