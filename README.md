@@ -63,6 +63,12 @@ You can also see test coverage by running
 npm run coverage
 
 ```
+## Linting
+Using Eslint for linting, run the below command to run lint
+
+```
+npm run lint
+```
 
 ## Technologies 
 This Api is powered by 
